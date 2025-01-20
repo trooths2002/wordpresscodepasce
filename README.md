@@ -32,3 +32,5 @@ En este repositorio, encontrarás un fichero ```compose.yaml``` que nos va a per
 10. Una vez ha acabado de configurar y levantar los contenedores, puedes ir a cualquier servicio en la pestaña de cotenedores docker (séptimo icono de la izquierda) y al pulsar el botón derecho en uno de los contenedores pulsar "open in web browser".
 
 ![imagen](https://github.com/user-attachments/assets/25a822d0-24af-4495-924a-015117e8bb33)
+
+**NOTA:** No olvides apagar los contenedores y el codespace eliminarlo, una vez acabado. Para ello pulsa la misma opción en el docker compose y selecciona "compose down" y para borrar el codespace desde la propia página de github selecciona delete en dicho codespace.
