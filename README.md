@@ -27,9 +27,9 @@ En este repositorio, encontrarás un fichero ```compose.yaml``` que nos va a per
 
 8. Tras instalar las extensiones, ya puedes levantar las aplicaciones; haz click en el fichero del codespace "compose.yaml" y pulsa la opción "compose up"; esto leerá el fichero Docker Compose, y levantará las aplicaciones.
 
-9. ![imagen](https://github.com/user-attachments/assets/c10c8e78-cb50-4f63-bbfb-275d4427350a)
+![imagen](https://github.com/user-attachments/assets/c10c8e78-cb50-4f63-bbfb-275d4427350a)
 
-10. Una vez ha acabado de configurar y levantar los contenedores, puedes ir a cualquier servicio en la pestaña de cotenedores docker (séptimo icono de la izquierda) y al pulsar el botón derecho en uno de los contenedores pulsar "open in web browser".
+9. Una vez ha acabado de configurar y levantar los contenedores, puedes ir a cualquier servicio en la pestaña de cotenedores docker (séptimo icono de la izquierda) y al pulsar el botón derecho en uno de los contenedores pulsar "open in web browser".
 
 ![imagen](https://github.com/user-attachments/assets/25a822d0-24af-4495-924a-015117e8bb33)
 
