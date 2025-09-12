@@ -1,36 +1,37 @@
-# Wordpress CodeSpace
+# WordPress Codespace
 
-En este repositorio encontrarás un ejemplo de aplicación a desplegar, para utilizar los llamados codespaces de Github. En este ejemplo, se podrá desplegar las siguientes aplicaciones:
+In this repository you will find an example application to deploy, to use the so-called GitHub Codespaces. In this example, you will be able to deploy the following applications:
 
-* Servidor de base de datos Mysql
-* PhpMyAdmin
-* Wordpress
+* MySQL Database Server
+* phpMyAdmin
+* WordPress
 
-En este repositorio, encontrarás un fichero ```compose.yaml``` que nos va a permitir desplegar las aplicaciones. Para ello, vamos a realizar los siguientes pasos:
+In this repository, you will find a `compose.yaml` file that will allow us to deploy the applications. To do this, we will perform the following steps:
 
-1. Inicia sesión en Github, y dirigete a este repositorio: [https://github.com/zerasul/wordpresscodepasce](https://github.com/zerasul/wordpresscodepasce)
-2. Una vez en él, vamos a realizar un "fork"; es decir una copia. Para ello, pulsaremos el botón Fork que encontrarás en la parte superior derecha.
+## Steps to Set Up
 
-![imagen](https://github.com/user-attachments/assets/a704aa3e-3c9f-4cce-94de-cfebd380ebac)
+1. Log in to GitHub, and go to this repository: [https://github.com/zerasul/wordpresscodepasce](https://github.com/zerasul/wordpresscodepasce)
+2. Once there, we will create a "fork"; that is, a copy. To do this, click the Fork button you'll find in the upper right corner.
 
-3. Tras acabar esto, tendrás una copia en tu usuario de este mismo repositorio; siendo la dirección: github.com/<usuario>/wordpresscodespace
-4. Ahora, vamos a activar el codespace. Esto es una opción que nos permitirá tener un entorno de desarrollo completo en la web; pudiendo también ejecutar comandos en una máquina virtual en la nube.
-5. Para activar el codespace, pulsamos en el botón verde "code" y buscamos la pestaña "codespace"; una vez allí creamos un nuevo codespace.
+![image](https://github.com/user-attachments/assets/a704aa3e-3c9f-4cce-94de-cfebd380ebac)
 
-![imagen](https://github.com/user-attachments/assets/d9332acf-e92b-44fc-a25a-a1d17ba5124b)
+3. After completing this, you will have a copy in your user account of this same repository; the address will be: github.com/<your-username>/wordpresscodepasce
+4. Now, let's activate the codespace. This is an option that will allow us to have a complete development environment on the web; you can also run commands on a virtual machine in the cloud.
+5. To activate the codespace, click the green "Code" button and look for the "Codespace" tab; once there, create a new codespace.
 
-6. Ya una vez hemos entrado en el codespace, puedes ver que se trata de un entorno Visual Studio Code completo. Puedes utilizar las mismas funcionalidades que la versión local.
+![image](https://github.com/user-attachments/assets/d9332acf-e92b-44fc-a25a-a1d17ba5124b)
 
-7. Antes de proceder a levantar las aplicaciones, vamos a instalar algunas extensiones; para instalar una extensión pulsa el quinto icono de la izquierda y busca la extensión "Docker"; una vez encontrada, pulsa el botón instalar.
+6. Once we've entered the codespace, you can see that it's a complete Visual Studio Code environment. You can use the same functionalities as the local version.
+7. Before proceeding to start the applications, let's install some extensions; to install an extension, click the fifth icon on the left and search for the "Docker" extension; once found, click the install button.
 
-![imagen](https://github.com/user-attachments/assets/08f2871a-1846-404e-8913-3fae553e5cae)
+![image](https://github.com/user-attachments/assets/08f2871a-1846-404e-8913-3fae553e5cae)
 
-8. Tras instalar las extensiones, ya puedes levantar las aplicaciones; haz click en el fichero del codespace "compose.yaml" y pulsa la opción "compose up"; esto leerá el fichero Docker Compose, y levantará las aplicaciones.
+8. After installing the extensions, you can now start the applications; click on the "compose.yaml" file in the codespace and select "Compose Up"; this will read the Docker Compose file and start the applications.
 
-![imagen](https://github.com/user-attachments/assets/c10c8e78-cb50-4f63-bbfb-275d4427350a)
+![image](https://github.com/user-attachments/assets/c10c8e78-cb50-4f63-bbfb-275d4427350a)
 
-9. Una vez ha acabado de configurar y levantar los contenedores, puedes ir a cualquier servicio en la pestaña de cotenedores docker (séptimo icono de la izquierda) y al pulsar el botón derecho en uno de los contenedores pulsar "open in web browser".
+9. Once it has finished configuring and starting the containers, you can go to any service in the Docker containers tab (seventh icon on the left) and right-click on one of the containers and select "Open in web browser".
 
-![imagen](https://github.com/user-attachments/assets/25a822d0-24af-4495-924a-015117e8bb33)
+![image](https://github.com/user-attachments/assets/25a822d0-24af-4495-924a-015117e8bb33)
 
-**NOTA:** No olvides apagar los contenedores y el codespace eliminarlo, una vez acabado. Para ello pulsa la misma opción en el docker compose y selecciona "compose down" y para borrar el codespace desde la propia página de github selecciona delete en dicho codespace.
+**NOTE:** Remember to shut down the containers and delete the codespace when finished. To do this, select the same option in Docker Compose and choose "Compose Down" and to delete the codespace from the GitHub page, select delete on that codespace.
