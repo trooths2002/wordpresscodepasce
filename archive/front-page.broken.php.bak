@@ -1,0 +1,33 @@
+<?php
+/* Front page template for Simple RT Theme Child - Hero */
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+get_header();
+
+// Dynamic links (fall back to '#')
+$messages_link = rt_get_category_link_by_slug( 'messages-in-black' );
+$about_link    = rt_get_page_link_by_slug( 'about' );
+
+$portrait = get_stylesheet_directory_uri() . '/images/placeholder-portrait.svg';
+?>
+
+<section class="rt-hero" role="banner" aria-label="Site hero">
+  <div class="rt-hero__inner">
+    <div class="rt-hero__content">
+      <h1><?php bloginfo( 'name' ); ?></h1>
+      <p class="lead"><?php bloginfo( 'description' ); ?></p>
+      <div class="rt-hero__cta">
+        <a href="<?php echo esc_url( $messages_link ); ?>">Messages in Black</a>
+        <a href="<?php echo esc_url( $about_link ); ?>">About</a>
+      </div>
+    </div>
+
+    <div class="rt-hero__portrait" aria-hidden="true">
+      <img src="<?php echo esc_url( $portrait ); ?>" alt="Elijah Muhammad portrait placeholder">
+    </div>
+  </div>
+</section>
+
+<?php get_footer();
+
