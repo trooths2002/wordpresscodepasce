@@ -1,0 +1,137 @@
+/*
+ * Styles for the custom hero section used on The Righteous Teachers website.
+ *
+ * Adjust colours, fonts and spacing to match your brand. The background image
+ * should be placed in the child theme’s images directory and referenced
+ * accordingly below. This stylesheet should be enqueued from your child
+ * theme’s functions.php or integrated into your existing styles.
+ */
+
+.rt-hero {
+  position: relative;
+  min-height: 85vh;
+  color: #f6e7bd;
+  background-image: url('../images/universe-background.jpg');
+  background-size: cover;
+  background-position: center right;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  isolation: isolate;
+}
+
+.rt-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(80% 60% at 30% 40%, rgba(0, 0, 0, 0.25), transparent 60%),
+    linear-gradient(#000000aa, #00000099);
+  z-index: 0;
+}
+
+.rt-hero__nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px;
+  background: linear-gradient(#00000066, #00000000);
+}
+
+.rt-logo {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #f6e7bd;
+  text-decoration: none;
+}
+
+.rt-menu {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.rt-menu a {
+  color: #ddd2a6;
+  text-decoration: none;
+}
+.rt-menu a:hover {
+  color: #fff2c7;
+}
+
+.rt-hero__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 800px;
+  padding: 48px 28px 64px;
+  align-self: center;
+}
+
+.rt-title {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+  margin: 0;
+}
+
+.rt-tagline {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  margin: 8px 0 16px;
+  color: #f2e7c5;
+}
+
+.rt-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.rt-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: #b98a3c;
+  color: #1b1206;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 0 #906d2e;
+  border: 1px solid #906d2e;
+}
+
+.rt-btn--ghost {
+  background: transparent;
+  color: #f6e7bd;
+  border-color: #c19b55;
+}
+
+.rt-portrait {
+  position: absolute;
+  right: 2vw;
+  bottom: 0;
+  max-height: 90%;
+  width: auto;
+  z-index: 1;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.45));
+}
+
+@media (max-width: 900px) {
+  .rt-hero {
+    background-position: center;
+  }
+  .rt-portrait {
+    opacity: 0.25;
+    right: -10%;
+  }
+  .rt-hero__content {
+    max-width: unset;
+  }
+  .rt-menu {
+    gap: 16px;
+    font-size: 0.95rem;
+  }
+}
