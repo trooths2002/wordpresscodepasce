@@ -1,0 +1,121 @@
+/*
+ * Styles for subpages such as category archives, audio archives, about and contact.
+ *
+ * The subpage hero uses the same colour palette as the homepage but adapts
+ * to shorter height. A responsive grid is used for post listings.
+ */
+
+.sub-hero {
+  position: relative;
+  min-height: 50vh;
+  color: #f6e7bd;
+  background-image: url('../images/universe-background.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+
+.sub-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(80% 60% at 30% 40%, rgba(0, 0, 0, 0.25), transparent 60%),
+    linear-gradient(#000000aa, #00000099);
+  z-index: 0;
+}
+
+.sub-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  padding: 48px 28px;
+}
+
+.sub-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.sub-tagline {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin-top: 12px;
+  color: #f2e7c5;
+}
+
+.sub-main {
+  padding: 3rem 2rem;
+  background: #fcf7ef;
+  color: #2c1b0d;
+}
+
+/* Grid for category and archive listings */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.post-card {
+  background: #ffffff;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-title {
+  font-size: 1.25rem;
+  margin: 1rem;
+  color: #36210b;
+}
+
+.post-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-excerpt {
+  flex-grow: 1;
+  margin: 0 1rem 1rem;
+  color: #4a3320;
+}
+
+.read-more {
+  margin: 0 1rem 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background: #b98a3c;
+  color: #1b1206;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.about-main,
+.contact-main {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .sub-main {
+    padding: 2rem 1rem;
+  }
+  .sub-hero__content {
+    padding: 36px 20px;
+  }
+  .post-title {
+    font-size: 1.1rem;
+  }
+}
